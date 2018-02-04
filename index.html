@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <title>Cook Book</title>
+</head>
+
+<body>
+    <header>
+	<center><i class="fa fa-cutlery" aria-hidden="true"> iQuest Cook Book</i></center>
+        <nav>
+            <table class="full-width">
+                <tr class="full-width">
+                    <td class="nav-item">
+                            <i class="fa fa-plus"></i>
+                            <strong> New recipe</strong>
+                       </td>
+                    <td class="nav-item">
+                        <select name="text">
+							<option>Select a recipe...</option>
+                            <option>Scambled egg omlette</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+    </header>
+    
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-info"> About</i>
+            </h3>
+
+            <form>
+
+                <div>
+                    <label for="title">Recipe title</label>
+                    <input type="text" name="title" id="title" placeholder="Title">
+                </div>
+                <div>
+                    <label> Description</label>
+                    <textarea rows="10" cols="30" placeholder="About the recipe"></textarea>
+                </div>
+
+                <section class="container">
+
+                    <div class="item" id="order1">
+                        <label for="portions"> Portions</label>
+                    </div>
+                    <div class="item" id="order3">
+                        <label for="time"> Time(mins)</label>
+                    </div>
+                    <div class="item" id="order5">
+                        <label for="dificulty"> Dificulty</label>
+                    </div>
+
+                    <div class="item" id="order2">
+                        <input type="number" name="portions" id="portions" value="1" min="1" max="5">
+                    </div>
+                    <div class="item" id="order4">
+                        <select class="time">
+							<option>5</option>
+							<option>10</option>
+							<option>15</option>
+							<option>20</option>
+							<option>30</option>
+							<option>45</option>
+							<option>60</option>
+							<option>90</option>
+							<option>120</option>
+						</select>
+                    </div>
+                    <div class="item" id="order6">
+                        <input type="number" name="dificulty" id="dificulty" value="1" min="1" max="10">
+                    </div>
+                </section>
+
+            </form>
+
+
+        </section>
+
+
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-list"></i> Ingredients
+            </h3>
+
+            <div class="ingredients">
+
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 300 g brown rice</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 2 pc red onions</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 pc fresh red chilli</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 25 g unsalted butter</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 6 pc large free-range eggs</div>
+
+
+            </div>
+
+            <section class="grid-container">
+                <div class="grid-item">
+                    <input type="text" name="qty" placeholder="Qty.">
+                </div>
+                <div class="grid-item" id="unit">
+
+                    <select name="text">
+                        <option value="value1" selected>Unit</option>
+                        <option value="value2">g</option>
+                        <option value="value3">Kg</option>
+                        <option value="value4">pc</option>
+                        <option value="value5">ml</option>
+                        <option value="value6">l</option>
+                        <option value="value7">tea spoon(s)</option>
+
+                    </select>
+                   
+                </div>
+                <div class="grid-item of">of</div>
+                <div class="grid-item" id="ingredient">
+                    
+                    <input type="text" name="ing" placeholder="Ingredient">
+                </div>
+
+                <div class="grid-item">
+                    <button type="submit">
+                        <i class="fa fa-plus-square"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
+        </section>
+
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-list-ol"></i> Steps
+            </h3>
+
+            <ol start="1">
+			  <li>Cook rice in a pan of boiling salted according to the packet instructions, then drain and refresh under cold water, leaving it in the colander.</li>
+			  <li>At the same time, poach the fish in a large pam of simmering salted water in a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat under the poaching water and bring back to a good simmer.</li>
+			  <li>Meanwhile, peel the onions and finely slice with a red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. Place it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not coloured, stirring occasionally.</li>
+			</ol>
+            <form>
+                <div>
+                    <label> Step</label><br>
+                    <textarea name="message" id="step-box" rows="10" cols="30" placeholder="Step description"></textarea>
+                </div>
+				<center><button class="step"><i class="fa fa-plus-square    " aria-hidden="true"> Add step</i></button></center>
+            </form>
+
+			
+			
+			
+        </section>
+       <footer>
+	   <br>
+	   <div class="buttons">
+			<button class="cancel"><i class="fa fa-trash-o    " aria-hidden="true"> Cancel</i></button>
+			<button class="save"><i class="fa fa-floppy-o     " aria-hidden="true"> Save receipe</i></button>
+		</div>
+	   </footer>
+	   
+    </main>
+
+</body>
+
+</html>
